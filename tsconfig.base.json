@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@misconnect/shared": ["packages/shared/src/index.ts"],
+      "@misconnect/shared/*": ["packages/shared/src/*"],
+      "@misconnect/api": ["apps/api/src/index.ts"],
+      "@misconnect/api/*": ["apps/api/src/*"]
+    }
+  }
+}

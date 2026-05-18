@@ -1,0 +1,13 @@
+{
+  "name": "@misconnect/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./firebase-admin": "./src/firebase-admin.ts"
+  },
+  "dependencies": {
+    "@misconnect/shared": "0.1.0"
+  }
+}

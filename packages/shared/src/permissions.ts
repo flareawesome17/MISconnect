@@ -1,0 +1,40 @@
+export const PERMISSIONS = [
+  "view_tickets",
+  "create_tickets",
+  "edit_tickets",
+  "delete_tickets",
+  "accept_tickets",
+  "assign_tickets",
+  "reassign_tickets",
+  "mark_tickets_as_spam",
+  "view_users",
+  "create_users",
+  "edit_users",
+  "delete_users",
+  "view_departments",
+  "create_departments",
+  "edit_departments",
+  "delete_departments",
+  "view_reports",
+  "export_reports",
+  "view_kpm_reports",
+  "export_kpm_reports",
+  "view_notifications",
+  "manage_roles",
+  "manage_passwords",
+  "view_settings",
+  "edit_settings",
+] as const;
+
+export type Permission = (typeof PERMISSIONS)[number];
+
+export const STAFF_PORTAL_PERMISSIONS: readonly Permission[] = [
+  "view_tickets",
+  "view_users",
+  "view_departments",
+  "view_reports",
+  "view_kpm_reports",
+  "manage_roles",
+  "manage_passwords",
+  "view_settings",
+];

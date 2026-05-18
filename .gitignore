@@ -6,11 +6,36 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+firebase-debug.log*
 
 node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
+!.env.example
+.next
+.next-build-check
+*.tsbuildinfo
+.turbo
+coverage
+.cache
+.vercel
+.firebase
+.firebaserc
+
+# Local credentials and machine-specific secrets
+*.pem
+*.key
+*.p12
+*.p8
+*.crt
+*.cer
+*service-account*.json
+*serviceAccount*.json
+*firebase-adminsdk*.json
+secrets.json
 
 # Editor directories and files
 .vscode/*
